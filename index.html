@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bolalarni Futbol Treningiga Jalb Qilish — Slaydlar</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Bolalarni Taekvondo Treningiga Jalb Qilish — Slaydlar</title>
 <style>
 :root{
   --bg:#0b0b0b;
   --text:#f5f5f5;
   --accent:#d4af37;
   --accent2:#ffd700;
-  --muted:#999;
   --radius:12px;
   --shadow:0 12px 30px rgba(0,0,0,0.7);
   --font:'Inter',system-ui,sans-serif;
@@ -33,9 +32,10 @@ body{
   height:100%;
   padding:60px;
   display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:flex-start;
+  flex-direction:row; /* rasm va matn yonma-yon */
+  align-items:center;
+  justify-content:flex-start;
+  gap:80px; /* rasm va matn orasidagi masofa */
   transition:opacity .5s, transform .5s;
   opacity:0;
   transform:translateX(50px);
@@ -53,14 +53,13 @@ h1{
 }
 p{
   margin-bottom:12px;
-  line-height:1.6;
-  font-size:1.05rem;
-  max-width:900px;
+  line-height:1.8;
+  font-size:1.2rem; /* matn kattaroq */
+  max-width:600px;
   color:var(--text);
 }
 .img-wrap{
-  margin:16px 0 24px;
-  width:100%;
+  flex-shrink:0;
 }
 img{
   width:500px;
@@ -95,10 +94,14 @@ button:hover{
   box-shadow:0 8px 25px rgba(212,175,55,0.7);
 }
 @media(max-width:900px){
+  .slide{
+    flex-direction:column;
+    padding:36px;
+    gap:24px; /* mobil uchun kichikroq bo‘shliq */
+  }
   h1{font-size:1.5rem;}
-  p{font-size:0.95rem;}
+  p{font-size:1rem;}
   img{width:100%;}
-  .slide{padding:36px;}
   .nav{padding:0 18px 12px;}
 }
 </style>
@@ -106,87 +109,106 @@ button:hover{
 <body>
 
 <section class="slide active">
-  <h1>1. Futbolga qiziqishni uyg‘otish</h1>
   <div class="img-wrap">
-    <img src="https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?q=80&w=1500&auto=format&fit=crop"
-         alt="Bolalar maydonda to'p bilan o'ynayotgan holat"
+    <img src="https://forwarriorsonly.com/cdn/shop/products/True-Warrio-Taekwon-Do-Uniform-Black-Belt-Sabum_1024x1024.jpg?v=1482854014"
+         alt="Bolalar taekvondo mashqlarini bajarayotgan holat"
          loading="lazy">
   </div>
-  <p>Bolani futbolga jalb qilish uchun avvalo unda qiziqish uyg‘otish kerak. Qiziqish bo‘lmasa, bola mashqlarni bajarsa ham, ruhiy ishtiyoq bo‘lmaydi. Shuning uchun mashg‘ulotni doimo ijobiy energiya va tabassum bilan boshlang. Trenerning kayfiyati bolaga bevosita ta’sir qiladi. Bola trenerni qanchalik yoqtirsa, shunchalik mashg‘ulotlarga tirishadi. Futbolni o‘yin sifatida tasvirlash juda muhim. Hikoya shaklida o‘rgatilgan mashg‘ulotlar bolaga esda qoladi. Har bir kichik muvaffaqiyatni sezib, maqtash kerak. Bola o‘zining o‘sganini his qilsa, o‘zi harakat qiladi. Qiziqish — o‘sishning birinchi bosqichi. Unga alohida e'tibor bering.</p>
+  <div>
+    <h1>1. Taekvondoga qiziqishni uyg‘otish</h1>
+    <p>Bola taekvondoga qiziqishi uchun mashg‘ulotlar o‘yin shaklida bo‘lishi kerak. Trenerning kayfiyati va yondashuvi bolaning ishtiyoqini oshiradi. Har bir muvaffaqiyatni sezib maqtash va rag‘batlantirish motivatsiya beradi. Mashg‘ulotni hikoya shaklida boshlash, “bugun biz kuchli jamoamiz” kabi iboralar bolani ruhlantiradi. Qiziqish — o‘sishning birinchi bosqichi.</p>
+  </div>
 </section>
 
 <section class="slide">
-  <h1>2. O‘yin orqali o‘rgatish</h1>
   <div class="img-wrap">
-    <img src="https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?q=80&w=1500&auto=format&fit=crop"
-         alt="Kichik guruhda futbol o'ynayotgan bolalar"
+    <img src="https://d2f0ora2gkri0g.cloudfront.net/bkpam2229830_f4b335b3-7768-45f2-992f-db9045699b4e.jpg"
+         alt="Kichik guruhda taekvondo mashqlari"
          loading="lazy">
   </div>
-  <p>Bolalar o‘yin orqali eng samarali o‘rganishadi. Agar mashqlar faqat takrorlash va buyruqdan iborat bo‘lsa, bola charchaydi. Shu sababli mashqni doim o‘yin shaklida berish kerak. Masalan, to‘pni boshqarish musobaqasi, kichik maydon o‘yinlari, relle yugurishlar. 3x3 va 4x4 qisqa o‘yinlar bolalarda tez fikrlashni shakllantiradi. O‘yin davomida bola xato qilishdan qo‘rqmaydi. Qo‘rqmasdan o‘rganish esa rivojlanishning eng muhim omilidir. Motivatsiya o‘yin orqali tabiiy shakllanadi. Har o‘yin oxirida qisqa mulohaza qilish ham zarur. “Nima yaxshi bo‘ldi?”, “Qaysi joyda kuchayish kerak?” kabi savollar fikrlashni ochadi.</p>
-</section>
-
-<section class="slide">
-  <h1>3. Texnika asoslarini shakllantirish</h1>
-  <div class="img-wrap">
-    
+  <div>
+    <h1>2. O‘yin orqali texnikani o‘rgatish</h1>
+    <p>O‘yin orqali mashq qilish bolada qiziqishni oshiradi va xatolardan qo‘rqmaslikni o‘rgatadi. Masalan, kichik relle mashqlari, zarba usullari va mini-turnirlar bolalarda tez fikrlash va tezkor reaktsiyani rivojlantiradi. Har mashg‘ulotdan keyin qisqa mulohaza qilish tavsiya etiladi: “Bugun nimani yaxshiladik?”, “Qaysi texnika ustida ishlashimiz kerak?”.</p>
   </div>
-  <p>Futbolning poydevori — to‘p bilan muomala. To‘pni qabul qilish, uzatish, yurish — asosiy boshlang‘ich ko‘nikmalar hisoblanadi. Kichik yoshda mukammal natija talab qilinmaydi. Muhimi — to‘g‘ri qo‘yilgan odat. To‘pni oyoq ostida his qilishni o‘rgatish uchun ko‘p mayda mashqlar beriladi. Har kuni 5-10 daqiqa individual texnika yetarli. Bola xato qilsa, uni to‘xtatib tanqid qilish emas, davom ettirishga undang. Xato o‘rganishning bir qismidir.</p>
 </section>
 
 <section class="slide">
-  <h1>4. Bir xillikdan qochish</h1>
   <div class="img-wrap">
-    <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=1500&auto=format&fit=crop"
-         alt="Turli mashqlar uchun konuslar va to'plar tayyorlangan maydon"
+    <img src="https://cdn.prod.website-files.com/684c5c4ce5ffc6cd0c751a97/684c5c4ce5ffc6cd0c75227e_DSC05064.jpg"
+         alt="Taekvondo zarba mashqi"
          loading="lazy">
   </div>
-  <p>Har kuni bir xil mashq bolani zeriktiradi. Mashqlarni segmentlarga bo‘ling: tezlik, koordinatsiya, texnika, kuch va mini-o‘yinlar. Har mashg‘ulotga kamida bitta yangi element qo‘shing. Maydon joylashuvini tez-tez o‘zgartiring. Ovozli signallar, rangli konuslar, kichik vazifalar qo‘shish motivatsiyani jonlantiradi. Har 10-12 daqiqada mashq turini almashtirish bola e’tiborini saqlaydi. O‘yinlar ham turli bo‘lishi kerak. Futbolning go‘zalligi — o‘zgarishda. Yangilik — motivatsiya yoqilg‘isi.</p>
-</section>
-
-<section class="slide">
-  <h1>5. Rag‘batlantirish tizimi</h1>
-  <div class="img-wrap">
-   
+  <div>
+    <h1>3. Asosiy texnikani shakllantirish</h1>
+    <p>Taekvondo poydevori — texnik zarbalar va bloklar. Kichik yoshda mukammal natija emas, to‘g‘ri odat muhim. Bola xato qilsa, tanqid qilmasdan davom ettirishga rag‘batlantiring. Har kuni 5-10 daqiqa individual texnika yetarli. Mashqlarni kichik o‘yinlar bilan bog‘lash rivojlanishni tezlashtiradi.</p>
   </div>
-  <p>Rag‘bat — bolalarning motoridir. Rag‘batni to‘g‘ri berish eng muhim vazifalardan biridir. Maqtov aniq bo‘lishi kerak: “Yaxshi ishlading” emas, “Sening to‘pni boshqarishing bugun yaxshiroq bo‘ldi” deyish kerak. Stickerlar, medallar, “haftaning futbolchisi” unvoni juda samarali. Ota-onalar oldida ijobiy ta’kid qilish ikki baravar motivatsiya beradi. Rag‘bat har doim me’yorda bo‘lsin — ortiqcha maqtov ham qadrini yo‘qotadi.</p>
 </section>
 
 <section class="slide">
-  <h1>6. Maqsadni tushuntirish</h1>
   <div class="img-wrap">
-    <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?q=80&w=1500&auto=format&fit=crop"
-         alt="Trener bolalarga maqsadni tushuntiryapti"
+    <img src="https://upload.wikimedia.org/wikipedia/en/0/0b/International_Taekwon-Do_Federation_logo.png"
+         alt="Turli mashqlar bilan taekvondo maydoni"
          loading="lazy">
   </div>
-  <p>Bola nima uchun mashq qilayotganini bilsa, u o‘zini ongli ravishda tutadi. Mashg‘ulot boshida aniq vazifa qo‘ying. Mashg‘ulot oxirida bola o‘zidagi o‘zgarishni sezsa, o‘zi izlanadi. Maqsadlar kichik, sodda va o‘lchab bo‘ladigan bo‘lsin. Tushuntirishda murakkab so‘z ishlatmang. Bola uchun sodda til — to‘g‘ri til.</p>
+  <div>
+    <h1>4. Bir xillikdan qochish</h1>
+    <p>Har doim bir xil mashqlar zerikishga olib keladi. Mashqlarni tezlik, koordinatsiya, kuch, zarba texnikalari va mini-o‘yinlarga bo‘ling. Har mashg‘ulotga yangi element qo‘shing va maydonni o‘zgartiring. Rangli konuslar, musobaqalar va kichik vazifalar motivatsiyani oshiradi.</p>
+  </div>
 </section>
 
 <section class="slide">
-  <h1>7. Jamoaviy o‘ynashni shakllantirish</h1>
+
+  
+  <div>
+    <h1>5. Rag‘batlantirish tizimi</h1>
+    <p>Rag‘bat — bolalarning eng kuchli motivatori. Maqtov aniq bo‘lsin: “Bugun zarbani mukammal bajarding”. Stickerlar, medallar, “haftaning eng yaxshi o‘quvchisi” kabi unvonlar samarali. Ota-onalar oldida e’lon qilish motivatsiyani oshiradi. Rag‘bat me’yorda bo‘lishi kerak.</p>
+  </div>
+</section>
+
+<section class="slide">
   <div class="img-wrap">
-    <img src="https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf?q=80&w=1500&auto=format&fit=crop"
-         alt="Jamoaviy ishlash va uzatish mashqlari"
+    <img src="https://images.squarespace-cdn.com/content/v1/5b7c56e255b02c683659fe43/1667417362538-3DGVRBFCM58R25K3YLTT/GettyImages-671260408.jpg?format=750w"
+         alt="Trener bolalarga taekvondo maqsadini tushuntiryapti"
          loading="lazy">
   </div>
-  <p>Futbolning yuragi — jamoa. Bola yakka holda o‘ynashni yaxshi ko‘rishi mumkin, lekin jamoaviy harakat qilishni o‘rgatish kerak. “Birga g‘alaba qilamiz” tamoyili juda muhim. O‘yin davomida bir-birini qo‘llab-quvvatlashni o‘rgating. Kichik jamoaviy topshiriqlar samarali. Hamkorlik — kelajak futbolchining poydevori.</p>
-</section>
-
-<section class="slide">
-  <h1>8. Intizom va hurmat</h1>
-  <div class="img-wrap">
-    
+  <div>
+    <h1>6. Maqsadni tushuntirish</h1>
+    <p>Bola mashqning maqsadini bilsa, o‘zini ongli tutadi. Mashg‘ulot boshida aniq vazifa qo‘ying va oxirida natijani qayta ko‘rib chiqing. Maqsadlar kichik va o‘lchab bo‘ladigan bo‘lsin. Demo harakatlar orqali tushuntirish samarali. Har mashg‘ulot — kichik yutuq yo‘li.</p>
   </div>
-  <p>Futbolda hurmat — eng asosiy qadriyat. Trenerga, jamoadoshga, raqibga hurmat bo‘lishi shart. Intizom jazolash orqali emas, tushuntirish va namuna orqali o‘rgatiladi. Kichik qoidalar yengil va tushunarli bo‘lsin. Intizom — futbolchi xarakterini shakllantiradi. To‘g‘ri shakllangan xarakter — maydonda ham, hayotda ham g‘alabaga olib boradi.</p>
 </section>
 
 <section class="slide">
-  <h1>9. Ota-onalar bilan hamkorlik</h1>
+  <div class="img-wrap">
+
+  </div>
+  <div>
+    <h1>7. Jamoaviy ishlashni shakllantirish</h1>
+    <p>Taekvondoda ham jamoaviy ruh muhim. Birgalikda mashq qilish, bir‑birini qo‘llab‑quvvatlash bolaning ijtimoiy va sport ko‘nikmalarini rivojlantiradi. Kichik jamoaviy topshiriqlar motivatsiya beradi va hamkorlikni oshiradi.</p>
+  </div>
+</section>
+
+<section class="slide">
   <div class="img-wrap">
     <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?q=80&w=1500&auto=format&fit=crop"
-         alt="Ota-onalar va trener suhbatlashyapti"
+         alt="Taekvondo mashqlarida hurmat va intizom"
          loading="lazy">
   </div>
-  <p>Ota-onalar bolaning rivojlanishida katta rol o‘ynaydi. Trening jarayonini ota-onaga tushuntirish muhim. Har hafta kichik foto yoki video hisobot yuborish ota-onaga ishonch beradi. Oyiga bir marta ochiq mashg‘ulot o‘tkazish yaxshi samara beradi. Ota-onaning samimiy ishtiroki bolaning imkoniyatlarini kuchaytiradi. Muhit doim ijobiy bo‘lishi kerak.</p>
+  <div>
+    <h1>8. Intizom va hurmat</h1>
+    <p>Hurmat va intizom taekvondoda eng muhim qadriyatlar. Trenerga, jamoadoshga, raqibga hurmat bo‘lishi shart. Intizom jazolash orqali emas, tushuntirish va namuna orqali o‘rgatiladi. Kichik qoidalar yengil va tushunarli bo‘lsin.</p>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="img-wrap">
+    <img src="https://itftkd.sport/wp-content/uploads/2020/06/Competition-ITF-2-394.jpg"
+         alt="Ota‑onalar va trener suhbatlashyapti taekvondo guruhida"
+         loading="lazy">
+  </div>
+  <div>
+    <h1>9. Ota‑onalar bilan hamkorlik</h1>
+    <p>Ota‑onalar bolaning rivojlanishida katta rol o‘ynaydi. Trening jarayonini tushuntirish, foto va video hisobotlar orqali ota‑onani xabardor qilish muhim. Oyiga bir marta ochiq mashg‘ulot bo‘lishi motivatsiyani oshiradi. Muhit doim ijobiy bo‘lishi kerak.</p>
+  </div>
 </section>
 
 <div class="nav">
@@ -198,7 +220,7 @@ button:hover{
 const slides = Array.from(document.querySelectorAll('.slide'));
 let current = 0;
 function showSlide(i){
-  slides.forEach((s,idx)=> s.classList.toggle('active', idx===i));
+  slides.forEach((s, idx) => s.classList.toggle('active', idx===i));
   current = i;
 }
 function nextSlide(){ showSlide((current + 1) % slides.length); }
